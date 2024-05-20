@@ -6,7 +6,7 @@ const DarkMode = () => {
   const [theme, setTheme] = React.useState()(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
   );
-  const element = document.documentElement;
+  const element = document.documentElement; // HTML Element
   console.log(element);
 
   return (
@@ -14,11 +14,15 @@ const DarkMode = () => {
       <img
         src={LightButton}
         alt=""
-        className="w-12 cursor-pointer drop-shadow-[1px_1px_1px_rgba(0,0,0,0.1)] transition-all duration-300 absolute right-0 z-10"
+        onClick={() => setTheme(theme == "light" ? "dark" : "light")}
+        className={`w-12 cursor-pointer drop-shadow-[1px_1px_1px_rgba(0,0,0,0.1)] transition-all duration-300 absolute right-0 z-10 ${
+          theme === "dark" ? "opcaity-0" : "opcaity-100"
+        }`}
       />
       <img
-        src={LightButton}
+        src={DarkButton}
         alt=""
+        onClick={() => setTheme(theme == "light" ? "dark" : "light")}
         className="w-12 cursor-pointer drop-shadow-[1px_1px_1px_rgba(0,0,0,0.1)] transition-all duration-300 absolute right-0 z-10"
       />
     </div>
