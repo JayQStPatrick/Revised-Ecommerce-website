@@ -14,7 +14,7 @@ const Banner = () => {
               className="max-w-[400px] h-[350px] w-full mx-auto drop-shadow-[-10px_10px_12px_rgba(0.0.0.1)] object-cover"
             />
           </div>
-          {/* text Details Section */}
+          {/* Text Details Section */}
           <div className="flex flex-col justify-center gap-6 sm:pt-0">
             <h1 className="text-3xl sm:text-4xl font-bold">
               Winter Sale upto 50% off
@@ -24,6 +24,24 @@ const Banner = () => {
               Distinctio soluta numquam id, exercitationem harum quae commodi
               odit doloribus architecto magni!
             </p>
+            <div className="flex flex-col gap-4">
+              <div data-aos="fade-up" className="flex items-center gap-4">
+                <GrSecure className="text-4xl h-12 w-12 shadow-am p-4 rounded-full bg-violet-100 dark:bg-violet-400" />
+                <p>Quality Products</p>
+              </div>
+              <div data-aos="fade-up" className="flex items-center gap-4">
+                <IoFastFood className="text-4xl h-12 w-12 shadow-sm p-4 rounded-full bg-orange-100 dark:bg-orange-400" />
+                <p>Fast Delivery</p>
+              </div>
+              <div data-aos="fade-up" className="flex items-center gap-4">
+                <IoFastFood className="text-4xl h-12 w-12 shadow-sm p-4 rounded-full bg-green-100 dark:bg-green-400" />
+                <p>Fast Payment Method</p>
+              </div>
+              <div data-aos="fade-up" className="flex items-center gap-4">
+                <IoFastFood className="text-4xl h-12 w-12 shadow-sm p-4 rounded-full bg-yellow-100 dark:bg-yellow-400" />
+                <p>Get Offers</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
