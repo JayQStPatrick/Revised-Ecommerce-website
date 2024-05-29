@@ -19,15 +19,17 @@ const App = () => {
     AOS.refresh();
   }, []);
   return (
-    <div>
-      <Navbar />
-      <Hero />
+    <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
+      <Navbar handleOrderPopup={handleOrderPopup} />
+      <Hero handleOrderPopup={handleOrderPopup} />
       <Products />
-      <TopProducts />
+      <TopProducts handleOrderPopup={handleOrderPopup} />
       <Banner />
       <Subscribe />
       <Products />
       <Testimonials />
+      <Footer />
+      <Popup orderPopup={orderPopup} setOrderPopup={setOrderPopup} />
     </div>
   );
 };

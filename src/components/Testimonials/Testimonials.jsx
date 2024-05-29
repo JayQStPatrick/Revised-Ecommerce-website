@@ -84,7 +84,7 @@ const Testimonials = () => {
           </p>
         </div>
         {/* Testimonial Cards */}
-        <div>
+        <div data-aos="zoom-in">
           <Slider {...settings}>
             {TestimonialData.map((data) => (
               <div className="my-6 ">
@@ -107,7 +107,9 @@ const Testimonials = () => {
                       </h1>
                     </div>
                   </div>
-                  <p className="text-black/20 text-9xl font-serif absolute top-0 right-0"></p>
+                  <p className="text-black/20 text-9xl font-serif absolute top-0 right-0">
+                    ''
+                  </p>
                 </div>
               </div>
             ))}
