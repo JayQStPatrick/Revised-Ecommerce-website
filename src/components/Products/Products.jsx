@@ -1,45 +1,50 @@
 import React from "react";
+import Img1 from "../../assets/women/women.png";
+import Img2 from "../../assets/women/women2.png";
+import Img3 from "../../assets/women/women3.png";
+import Img4 from "../../assets/women/women4.png";
+import { FaStar } from "react-icons/fa6";
 
 const ProductData = [
   {
     id: 1,
     img: Img1,
-    title: "women ethnic",
+    title: "women Ethnic",
     rating: 5.0,
-    author: "white",
+    color: "white",
     aosDelay: "0",
   },
   {
     id: 2,
     img: Img2,
-    title: "women ethnic",
-    rating: 5.0,
-    author: "white",
-    aosDelay: "0",
+    title: "Women western",
+    rating: 4.5,
+    color: "Red",
+    aosDelay: "200",
   },
   {
     id: 3,
     img: Img3,
-    title: "women ethnic",
-    rating: 5.0,
-    author: "white",
-    aosDelay: "0",
+    title: "Goggles",
+    rating: 4.7,
+    color: "brown",
+    aosDelay: "400",
   },
   {
     id: 4,
     img: Img4,
-    title: "women ethnic",
-    rating: 5.0,
-    author: "white",
-    aosDelay: "0",
+    title: "Printed T-Shirt",
+    rating: 4.4,
+    color: "Yellow",
+    aosDelay: "600",
   },
   {
     id: 5,
-    img: Img5,
-    title: "women ethnic",
-    rating: 5.0,
-    author: "white",
-    aosDelay: "0",
+    img: Img2,
+    title: "Fashion T-Shirt",
+    rating: 4.5,
+    color: "Pink",
+    aosDelay: "800",
   },
 ];
 
@@ -62,7 +67,7 @@ const Products = () => {
         </div>
         {/* {Body Section} */}
         <div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items center gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center gap-5">
             {/* {Card Section} */}
             {ProductData.map((data) => (
               <div
@@ -91,7 +96,7 @@ const Products = () => {
           <div className="flex justify-center">
             <button
               className="text-center mt-10
-            cursor-pointer bg-primary text-white py-1 p:rounded-md"
+            cursor-pointer bg-primary text-white py-1 px-5 p:rounded-md"
             >
               View All Button
             </button>

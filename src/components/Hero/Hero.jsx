@@ -2,33 +2,33 @@ import React from "react";
 import Image1 from "../../assets/hero/women.png";
 import Image2 from "../../assets/hero/shopping.png";
 import Image3 from "../../assets/hero/sale.png";
-import Slider from "reacr-slick";
+import Slider from "react-slick";
 
 const ImageList = [
   {
     id: 1,
     img: Image1,
     title: "Up to 50% off on all Men's wear",
-    Description:
+    description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis consequatur sequi veritatis, sed ipsam officiis nulla asperiores veniam impedit maiores recusandae natus et dolorum ullam magnam quae? Deserunt, amet nesciunt.",
   },
   {
     id: 2,
     img: Image2,
-    title: "Up to 50% off on all Men's wear",
-    Description:
+    title: "30% off on all products",
+    description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis consequatur sequi veritatis, sed ipsam officiis nulla asperiores veniam impedit maiores recusandae natus et dolorum ullam magnam quae? Deserunt, amet nesciunt.",
   },
   {
     id: 3,
     img: Image3,
-    title: "Up to 50% off on all Men's wear",
-    Description:
+    title: "70% off on all products",
+    description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis consequatur sequi veritatis, sed ipsam officiis nulla asperiores veniam impedit maiores recusandae natus et dolorum ullam magnam quae? Deserunt, amet nesciunt.",
   },
 ];
 
-const Hero = () => {
+const Hero = ({ handleOrderPopup }) => {
   var settings = {
     dots: false,
     arrows: false,
@@ -37,14 +37,15 @@ const Hero = () => {
     slideToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
-    cssEase: "case-in-out",
-    pauseonHover: false,
-    pauseonFocus: true,
+    cssEase: "ease-in-out",
+    pauseOnHover: false,
+    pauseOnFocus: true,
   };
+
   return (
     <div className="relative overflow-hidden min-h-[550px] sm:min-h-[650px] bg-gray-100 flex-justify-center items-center dark:bg-gray-950 dark:text-white duartion-200">
       {/* Background Pattern */}
-      <div className="h-[700px] w-[700px] bg-primary/40 absolute -top-1/2 right-0 rounded-3xl rotate-45 -z-9"></div>
+      <div className="h-[700px] w-[700px] bg-primary/40 absolute -top-1/2 right-0 rounded-3xl rotate-45 -z[8]"></div>
       {/* Hero Section */}
       <div className="container pb-8 sm:pb-0">
         <Slider {...settings}>
@@ -84,11 +85,15 @@ const Hero = () => {
                 </div>
                 {/* {Image Section} */}
                 <div className="order-1 sm:order-2">
-                  <div className="relative z-10">
+                  <div
+                    data-aos="zoom-in"
+                    data-aos-once="true"
+                    className="relative z-10"
+                  >
                     <img
                       src={data.img}
                       alt=""
-                      className="w-[300px] h-[300px] sm:h-[450px] sm:w[450px] sm:scale-125 object-contain mx-auto"
+                      className="w-[300px] h-[300px] sm:h-[450px] sm:w[450px] sm:scale-105 lg:scale-120 object-contain mx-auto"
                     />
                   </div>
                 </div>
