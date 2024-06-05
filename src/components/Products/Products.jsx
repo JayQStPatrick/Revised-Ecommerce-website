@@ -1,15 +1,19 @@
 import React from "react";
-import Img1 from "../../assets/women/women.png";
-import Img2 from "../../assets/women/women2.png";
-import Img3 from "../../assets/women/women3.png";
-import Img4 from "../../assets/women/women4.png";
+import Img1 from "../../assets/women.png";
+import Img2 from "../../assets/women2.png";
+import Img3 from "../../assets/women3.png";
+import Img4 from "../../assets/women4.png";
+// import Img1 from "../../assets/women/women.png";
+// import Img2 from "../../assets/women/women2.png";
+// import Img3 from "../../assets/women/women3.png";
+// import Img4 from "../../assets/women/women4.png";
 import { FaStar } from "react-icons/fa6";
 
 const ProductData = [
   {
     id: 1,
     img: Img1,
-    title: "women Ethnic",
+    title: "Women Ethnic",
     rating: 5.0,
     color: "white",
     aosDelay: "0",
