@@ -1,30 +1,32 @@
 import React from "react";
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const TestimonialData = [
   {
     id: 1,
     name: "Victor",
     text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo nostrum minima dolor voluptatum odit eius!",
-    img: "https://picsum.photos101/101",
+    img: "https://picsum.photos/101/101",
   },
   {
     id: 2,
     name: "Wirtz",
     text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo nostrum minima dolor voluptatum odit eius!",
-    img: "https://picsum.photos102/102",
+    img: "https://picsum.photos/102/102",
   },
   {
     id: 3,
     name: "Xhaka",
     text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo nostrum minima dolor voluptatum odit eius!",
-    img: "https://picsum.photos103/103",
+    img: "https://picsum.photos/103/103",
   },
   {
     id: 4,
     name: "Frimpong",
     text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo nostrum minima dolor voluptatum odit eius!",
-    img: "https://picsum.photos104/104",
+    img: "https://picsum.photos/104/104",
   },
 ];
 
@@ -44,24 +46,24 @@ const Testimonials = () => {
       {
         breakpoint: 10000,
         settings: {
-          slideToShow: 3,
-          slideToScroll: 1,
+          slidesToShow: 3,
+          slidesToScroll: 1,
           infinite: true,
         },
       },
       {
         breakpoint: 1024,
         settings: {
-          slideToShow: 2,
-          slideToScroll: 1,
+          slidesToShow: 2,
+          slidesToScroll: 1,
           initialSlide: 2,
         },
       },
       {
         breakpoint: 640,
         settings: {
-          slideToShow: 1,
-          slideToScroll: 1,
+          slidesToShow: 1,
+          slidesToScroll: 1,
         },
       },
     ],
@@ -99,7 +101,7 @@ const Testimonials = () => {
                       className="rounded-full w-20 h-20"
                     />
                   </div>
-                  <div className=" flex flex-col items-center ga-4">
+                  <div className=" flex flex-col items-center gap-4">
                     <div className="space-y-3">
                       <p className="text-xs text-gray-500">{data.text}</p>
                       <h1 className="text-xl font-bold text-black/80 dark:text-light">
